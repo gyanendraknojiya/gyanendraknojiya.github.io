@@ -12,6 +12,7 @@ body {
 .navbar-toggler {
   outline: none !important;
   margin-right: 30px;
+  color: black !important;
 }
 
 .navbar-nav {
@@ -36,41 +37,38 @@ body {
 /* ----------------- home section css------------------------- */
 
 #Home {
-/* 
+  /* 
   background: linear-gradient(-90deg, #000000 0%, #cbcbcb 38%, #ffffff 100%); */
   background-color: #161616;
 }
-#Home .container-black {
-    background-color: #ffffff;
-    background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+.container-black {
+  background-color: #ffffff;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   padding: 80px 5% 0;
   margin: 0 10%;
 }
 
 #Home .container-black img {
-    max-height: 500px;
-    height: auto;
-    width: auto;
+  height: auto;
+  width: 100%;
   display: flex;
   margin-right: 0;
   float: right;
 }
 
-@media screen and (max-width: 768px) {
-  #Home .container-black img {
-      margin: 0 auto;
-    padding: 50px 10% 0;
-  }
-  .navbar{
-      background: white;
-  }
-  .nav-link{
-      color: black !important;
-  }
-  #Home .container-black {
-      margin: 0;
-  }
-
+.black-border {
+  height: 3px;
+  width: 100%;
+  background: linear-gradient(
+    -90deg,
+    #fff 0%,
+    #ff3c3c 15%,
+    #e6ff04 30%,
+    #27ff7a 45%,
+    #29e2fa 65%,
+    #803cff 85%,
+    #ffffff 90%
+  );
 }
 
 .intro {
@@ -84,8 +82,104 @@ body {
 }
 .sub-heading {
   font-family: Montserrat;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 1.5rem;
   padding: 10px 0;
   color: gray;
 }
+
+#Skill {
+  /* 
+    background: linear-gradient(-90deg, #000000 0%, #cbcbcb 38%, #ffffff 100%); */
+  background-color: #161616;
+}
+
+.skill-logo {
+  height: 100px;
+  width: auto;
+  display: flex;
+  margin: auto auto;
+}
+
+.skill-list-item {
+  display: block;
+}
+
+.skill-group {
+  display: block;
+  border-radius: 10%;
+  padding: 20px 20px 5px;
+  margin: 20px auto;
+}
+
+.skill-group h6 {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.skill-group p {
+  font-size: 13px;
+  padding: 5px 0;
+  color: rgb(63, 63, 63);
+}
+
+.skill-group.group-1 {
+  background-color: antiquewhite;
+}
+.skill-group.group-2 {
+  background-color: rgb(255, 221, 221);
+}
+.skill-group.group-3 {
+  background-color: rgb(200, 226, 255);
+}
+.skill-group.group-4 {
+  background-color: rgb(200, 255, 229);
+}
+.skill-group.group-5 {
+  background-color: rgb(244, 200, 255);
+}
+.skill-group.group-6 {
+  background-color: rgb(247, 255, 200);
+}
+
+.fa-arrow-circle-right {
+  margin-right: 8px;
+  color: #383838;
+}
+
+
+
+@media screen and (min-width: 768px) {
+  .navbar-light .navbar-toggler {
+    color: white;
+  }
+  .black-border {
+    background: linear-gradient(
+      -90deg,
+      #161616 10%,
+      #ff3c3c 15%,
+      #e6ff04 30%,
+      #27ff7a 45%,
+      #29e2fa 65%,
+      #803cff 85%,
+      #161616 90%
+    );
+  }
+}
+  @media screen and (max-width: 768px) {
+    #Home .container-black img {
+      margin: 0 auto;
+      padding: 50px 10% 0;
+      float: none;
+    }
+    .navbar {
+      background: white;
+    }
+    .nav-link {
+      color: black !important;
+    }
+     .container-black {
+      margin: 0;
+    }
+  }
