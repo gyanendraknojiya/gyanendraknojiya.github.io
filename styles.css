@@ -131,21 +131,21 @@ body {
 }
 .skill-group.group-2 {
   background-color: rgb(255, 221, 221);
-  padding-top: 5x;
+  margin-top: 40px;
 }
 .skill-group.group-3 {
   background-color: rgb(200, 226, 255);
 }
 .skill-group.group-4 {
   background-color: rgb(200, 255, 229);
-  padding-top: 5x;
+  margin-top: 40px;
 }
 .skill-group.group-5 {
   background-color: rgb(244, 200, 255);
 }
 .skill-group.group-6 {
   background-color: rgb(247, 255, 200);
-  padding-top: 5x;
+  margin-top: 40px;
 }
 
 .fa-arrow-circle-right {
