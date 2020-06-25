@@ -107,13 +107,12 @@ body {
 
 .skill-group {
   display: block;
-  border-radius:25px;
+  border-radius: 25px;
   padding: 20px 20px 5px;
-  margin: 25px auto;
+  margin: 20px auto;
 }
 
 .skill-group h6 {
-  
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -121,12 +120,10 @@ body {
 }
 
 .skill-group p {
-  
   font-family: "Montserrat", sans-serif;
   font-size: 13px;
   padding: 5px 0;
   color: rgb(63, 63, 63);
-  
 }
 
 .skill-group.group-1 {
@@ -134,26 +131,27 @@ body {
 }
 .skill-group.group-2 {
   background-color: rgb(255, 221, 221);
+  padding-top: 5x;
 }
 .skill-group.group-3 {
   background-color: rgb(200, 226, 255);
 }
 .skill-group.group-4 {
   background-color: rgb(200, 255, 229);
+  padding-top: 5x;
 }
 .skill-group.group-5 {
   background-color: rgb(244, 200, 255);
 }
 .skill-group.group-6 {
   background-color: rgb(247, 255, 200);
+  padding-top: 5x;
 }
 
 .fa-arrow-circle-right {
   margin-right: 8px;
   color: #383838;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .navbar-light .navbar-toggler {
@@ -172,19 +170,19 @@ body {
     );
   }
 }
-  @media screen and (max-width: 768px) {
-    #Home .container-black img {
-      margin: 0 auto;
-      padding: 50px 10% 0;
-      float: none;
-    }
-    .navbar {
-      background: white;
-    }
-    .nav-link {
-      color: black !important;
-    }
-     .container-black {
-      margin: 0;
-    }
+@media screen and (max-width: 768px) {
+  #Home .container-black img {
+    margin: 0 auto;
+    padding: 50px 10% 0;
+    float: none;
   }
+  .navbar {
+    background: white;
+  }
+  .nav-link {
+    color: black !important;
+  }
+  .container-black {
+    margin: 0;
+  }
+}
