@@ -75,7 +75,7 @@ body {
   margin: auto 0;
 }
 .heading {
-  font-family: Montserrat;
+  font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 3rem;
   color: black;
@@ -109,19 +109,24 @@ body {
   display: block;
   border-radius:25px;
   padding: 20px 20px 5px;
-  margin: 20px auto;
+  margin: 25px auto;
 }
 
 .skill-group h6 {
+  
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 18px;
   text-align: center;
 }
 
 .skill-group p {
+  
+  font-family: "Montserrat", sans-serif;
   font-size: 13px;
   padding: 5px 0;
   color: rgb(63, 63, 63);
+  
 }
 
 .skill-group.group-1 {
