@@ -45,7 +45,6 @@ body {
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
   padding: 80px 5% 0;
-  margin: 0 10%;
 }
 
 #Home .container-black img {
@@ -56,18 +55,32 @@ body {
   float: right;
 }
 
+.social-profiles {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 10px 30%;
+}
+
+.social-profiles a {
+  color: #303030;
+}
+.line-bg {
+  margin: 0;
+  background-color: #161616;
+}
 .black-border {
   height: 3px;
   width: 100%;
   background: linear-gradient(
     -90deg,
-    #fff 10%,
+    #fff 4%,
     #ff3c3c 15%,
     #e6ff04 30%,
     #27ff7a 45%,
     #29e2fa 65%,
     #803cff 85%,
-    #ffffff 90%
+    #ffffff 96%
   );
 }
 
@@ -157,18 +170,6 @@ body {
   .navbar-light .navbar-toggler {
     color: white;
   }
-  .black-border {
-    background: linear-gradient(
-      -90deg,
-      #161616 10%,
-      #ff3c3c 15%,
-      #e6ff04 30%,
-      #27ff7a 45%,
-      #29e2fa 65%,
-      #803cff 85%,
-      #161616 90%
-    );
-  }
 }
 @media screen and (max-width: 768px) {
   #Home .container-black img {
@@ -182,7 +183,5 @@ body {
   .nav-link {
     color: black !important;
   }
-  .container-black {
-    margin: 0;
-  }
+
 }
