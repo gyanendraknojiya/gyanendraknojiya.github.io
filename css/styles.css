@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Ailerons";
+  src: url('../fonts/Ailerons.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/Aileronsd41d.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/Ailerons.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/Ailerons.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/Ailerons.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/Ailerons.svg#Ailerons') format('svg'); /* Legacy iOS */
+}
+
 body {
   margin: 0;
   font-family: "Noto Sans", sans-serif;
@@ -41,6 +51,7 @@ body {
   background: linear-gradient(-90deg, #000000 0%, #cbcbcb 38%, #ffffff 100%); */
   background-color: #161616;
 }
+
 .container-black {
   background-color: #ffffff;
   background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
@@ -88,17 +99,19 @@ body {
   margin: auto 0;
 }
 .heading {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 900;
-  font-size: 3rem;
+  padding-top: 30px;
+  font-family: "Ailerons";
+  font-weight: 500;
+  font-size: 5rem;
   color: black;
+  text-transform: uppercase;
 }
 .sub-heading {
-  font-family: Montserrat;
+  font-family: "Ailerons";
   font-weight: 300;
   font-size: 1.5rem;
   padding: 10px 0;
-  color: gray;
+  color: #2e2e2e;
 }
 
 #Skill {
@@ -166,6 +179,48 @@ body {
   color: #383838;
 }
 
+.gradient-circle{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: -30px;
+  z-index: 50;
+}
+.about-img{
+  border-radius: 50%;
+  width: 320px;
+  margin: auto;
+  position: relative;
+}
+
+.about-spots{
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 55;
+  width: 450px;
+  height: 450px;
+  margin-top: -70px;
+  animation: spots 10s infinite linear ;
+
+}
+@keyframes spots{
+  from{transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}
+
+.about-text{
+  padding: 20px 0 90px;
+  font-family: "Ailerons";
+  font-weight: 900;
+  font-size: 5rem;
+  color: #000000cb;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 @media screen and (min-width: 768px) {
   .navbar-light .navbar-toggler {
     color: white;
@@ -183,5 +238,24 @@ body {
   .nav-link {
     color: black !important;
   }
+  .heading {
+    font-size: 3rem;
+  }
+  .gradient-circle{
+    width: 260px;
+    margin-top: -20px;
+  }
+  .about-img{
+    width: 220px;
+  }
+.about-spots{
+  width: 350px;
+  height: 350px;
+  margin-top: -60px;
+}
 
+}
+
+#about{
+  background-color: #161616;
 }
