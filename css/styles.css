@@ -1,21 +1,26 @@
 @font-face {
   font-family: "Ailerons";
-  src: url('../fonts/Ailerons.eot'); /* IE9 Compat Modes */
-  src: url('../fonts/Aileronsd41d.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/Ailerons.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/Ailerons.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/Ailerons.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/Ailerons.svg#Ailerons') format('svg'); /* Legacy iOS */
+  src: url("../fonts/Ailerons.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/Aileronsd41d.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/Ailerons.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/Ailerons.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/Ailerons.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/Ailerons.svg#Ailerons")
+      format("svg"); /* Legacy iOS */
+}
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
   margin: 0;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 
 .navbar {
   /* background: linear-gradient(-90deg, #000000 0%, #cbcbcb 38%, #ffffff 100%); */
-  background-color: #161616;
   padding: 10px 0;
 }
 
@@ -35,7 +40,6 @@ body {
 }
 
 .nav-link {
-  color: white !important;
   padding: 5px 20px !important;
 }
 
@@ -46,19 +50,8 @@ body {
 
 /* ----------------- home section css------------------------- */
 
-#Home {
-  /* 
-  background: linear-gradient(-90deg, #000000 0%, #cbcbcb 38%, #ffffff 100%); */
-  background-color: #161616;
-}
-
-.container-black {
-  background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
-  padding: 80px 5% 0;
-}
-
-#Home .container-black img {
+#Home img {
+  max-width: 350px;
   height: auto;
   width: 100%;
   display: flex;
@@ -76,10 +69,7 @@ body {
 .social-profiles a {
   color: #303030;
 }
-.line-bg {
-  margin: 0;
-  background-color: #161616;
-}
+
 .black-border {
   height: 3px;
   width: 100%;
@@ -113,18 +103,14 @@ body {
   padding: 10px 0;
   color: #2e2e2e;
 }
-
-#Skill {
-  /* 
-    background: linear-gradient(-90deg, #000000 0%, #cbcbcb 38%, #ffffff 100%); */
-  background-color: #161616;
+#Skill{
+  padding: 30px 0;
 }
-
 .skill-logo {
   height: 100px;
   width: auto;
   display: flex;
-  margin: auto auto;
+  margin: 50px auto;
 }
 
 .skill-list-item {
@@ -179,22 +165,23 @@ body {
   color: #383838;
 }
 
-.gradient-circle{
+.gradient-circle {
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  margin-top: -30px;
+  margin-top: 20px;
   z-index: 50;
 }
-.about-img{
+.about-img {
   border-radius: 50%;
   width: 320px;
-  margin: auto;
+  margin: 50px auto;
   position: relative;
+  display: flex;
 }
 
-.about-spots{
+.about-spots {
   position: absolute;
   left: 0;
   right: 0;
@@ -202,32 +189,149 @@ body {
   z-index: 55;
   width: 450px;
   height: 450px;
-  margin-top: -70px;
-  animation: spots 10s infinite linear ;
-
+  margin-top: -20px;
+  animation: spots 10s infinite linear;
+  overflow: hidden;
 }
-@keyframes spots{
-  from{transform: rotate(0deg);}
-  to{transform: rotate(360deg);}
+@keyframes spots {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.about-text{
-  padding: 20px 0 90px;
+.about-text {
   font-family: "Ailerons";
-  font-weight: 900;
+  font-weight: 500;
   font-size: 5rem;
-  color: #000000cb;
+  color: rgb(19, 19, 19);
   text-transform: uppercase;
   text-align: center;
 }
-
-@media screen and (min-width: 768px) {
-  .navbar-light .navbar-toggler {
-    color: white;
-  }
+.about-text span {
+  color: #f8e329;
 }
+
+.about-body{
+  font-family: 'Lato',sans-serif;
+  line-height: 26px;
+  color: #2e2e2e;
+  display: flex;
+  justify-content: center;
+}
+
+#contact{
+  background-color: #303030;
+}
+
+.contact-details{
+  height: 500px;
+  max-width: 350px;
+  width: auto;
+  background-color: #803cff;
+  margin: auto;
+  margin-top: -40px;
+}
+form{
+  width: 80%;
+  margin: auto;
+}
+
+form.contact-form {
+  margin-top: 40px;
+}
+form.contact-form .form-group {
+  margin-bottom: 30px;
+}
+form.contact-form .form-group .form-control{
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid yellow;
+}
+
+form button{
+  display: flex;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 8px 30px;
+  background-color: transparent;
+  color: #e6ff04;
+  border: 1px solid transparent;
+  letter-spacing: 3px;
+  position: relative;
+  overflow: hidden;
+}
+form button:hover{
+  background-color: #e8ff1b;
+  color: #000000;
+  box-shadow: 0 0 25px rgb(255, 255, 42),0 0 50px yellow,0 0 75px yellow,0 0 100px rgb(255, 255, 100);
+}
+
+@keyframes animate1{
+  from{left: -100%}
+  to{left: 100%}
+}
+form button span:nth-child(1){
+position: absolute;
+top:0;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg, transparent, yellow);
+animation: animate1 1s infinite ;
+animation-delay: .2s;
+}
+
+@keyframes animate2{
+  from{left: 100%}
+  to{left: -100%}
+}
+form button span:nth-child(2){
+position: absolute;
+bottom:0;
+width: 100%;
+height: 2px;
+background: linear-gradient(-90deg, transparent, yellow);
+animation: animate2 1s infinite ;
+animation-delay: .75s;
+}
+
+@keyframes animate3{
+  from{top: -100%}
+  to{top: 100%}
+}
+form button span:nth-child(3){
+position: absolute;
+right:0;
+height: 100%;
+width: 2px;
+background: linear-gradient(180deg, transparent, yellow);
+animation: animate3 1s infinite ;
+animation-delay: .5s;
+}
+
+@keyframes animate4{
+  from{bottom: -100%}
+  to{bottom: 100%}
+}
+form button span:nth-child(4){
+position: absolute;
+left:0;
+height: 100%;
+width: 2px;
+background: linear-gradient(360deg, transparent, yellow);
+animation: animate4 1s infinite ;
+animation-delay: 1s;
+}
+
+
+#contact .about-text{
+  color: white;
+}
+
 @media screen and (max-width: 768px) {
-  #Home .container-black img {
+  #Home img {
     margin: 0 auto;
     padding: 50px 10% 0;
     float: none;
@@ -235,27 +339,46 @@ body {
   .navbar {
     background: white;
   }
-  .nav-link {
-    color: black !important;
-  }
   .heading {
     font-size: 3rem;
   }
-  .gradient-circle{
+  .gradient-circle {
     width: 260px;
     margin-top: -20px;
   }
-  .about-img{
+  .about-img {
     width: 220px;
+    
+    margin-top: auto;
   }
-.about-spots{
-  width: 350px;
-  height: 350px;
-  margin-top: -60px;
+  .about-spots {
+    width: 320px;
+    height: 320px;
+    margin-top: -60px;
+  }
+  .about-text {
+    font-size: 4rem;
+  }
 }
 
+@media screen and (max-width: 425px) {
+  
+  .gradient-circle {
+    width: 220px;
+    margin-top: -20px;
+  }
+  .about-img {
+    width: 180px;
+    margin-top: auto;
+  }
+  .about-spots {
+    width: 280px;
+    height: 280px;
+    margin-top: -50px;
+  }
+  .about-text {
+    margin-top: 25px;
+    font-size: 3rem;
+  }
 }
 
-#about{
-  background-color: #161616;
-}

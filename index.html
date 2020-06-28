@@ -28,7 +28,10 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900"
+      rel="stylesheet"
+    />
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/f4268cb00d.js"
@@ -45,150 +48,274 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="fixed-top">
+    <section class="container wrapper">
+      <!-- --------------------------------------------- Navbar -------------------------------------- -->
+
       <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-          <a class="navbar-brand" href="#"
-            ><img src="./images/logo.png" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse ml-auto" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="#Home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#Skill">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/projects.html" target="_blank">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about-us">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contact-us">Contact</a>
-              </li>
-             
-            </ul>
-          </div>
+        <a class="navbar-brand" href="#"
+          ><img src="./images/logo.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse ml-auto" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Skill">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/projects.html" target="_blank"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us">Contact</a>
+            </li>
+          </ul>
         </div>
       </nav>
-    </div>
 
-    <!-- --------------------------------- section Home -------------------------------------- -->
+      <!-- --------------------------------- section Home -------------------------------------- -->
 
-    <section id="Home">
-      <div class="container wrapper container-black">
-        <div class="row">
-         
-          <div class="col-md-6 text-center intro">
-            <h1 class="heading">GYANENDRA</h1>
-            <div class="sub-heading">I am MERN Stack Developer</div>
-            <a class="btn btn-dark btn-large m-3 pr-3" href="https://drive.google.com/file/d/1RWKjIK_YShQ2um54gHmuLYL4NzkENUey/view?usp=sharing" target="_blank"><i class="fas fa-download mr-3"></i>Resume</a>
-            <div class="social-profiles">
-              <span><a href="https://github.com/gyanendraknojiya"><i class="fab fa-github-alt fa-2x" ></i></a></span>
-              <span><a href="https://www.linkedin.com/in/gyanendraknojiya/"><i class="fab fa-linkedin fa-2x " ></i></a></span>
-              <span><a href="https://www.facebook.com/gyanendraknojiya"><i class="fab fa-facebook-square fa-2x " ></i></a></span>
+      <section id="Home">
+        <div>
+          <div class="row">
+            <div class="col-md-7 text-center intro">
+              <h1 class="heading">GYANENDRA</h1>
+              <div class="sub-heading">I am MERN Stack Developer</div>
+              <a
+                class="btn btn-dark btn-large m-3 pr-3"
+                href="https://drive.google.com/file/d/1RWKjIK_YShQ2um54gHmuLYL4NzkENUey/view?usp=sharing"
+                target="_blank"
+                ><i class="fas fa-download mr-3"></i>Resume</a
+              >
+              <div class="social-profiles">
+                <span
+                  ><a href="https://github.com/gyanendraknojiya"
+                    ><i class="fab fa-github-alt fa-2x"></i></a
+                ></span>
+                <span
+                  ><a href="https://www.linkedin.com/in/gyanendraknojiya/"
+                    ><i class="fab fa-linkedin fa-2x"></i></a
+                ></span>
+                <span
+                  ><a href="https://www.facebook.com/gyanendraknojiya"
+                    ><i class="fab fa-facebook-square fa-2x"></i></a
+                ></span>
+              </div>
+            </div>
+            <div class="col-md-5">
+              <img src="./images/gyanendra.png" alt="my_img" />
             </div>
           </div>
-          <div class="col-md-6">
-            <img src="./images/gyanendra.png" alt="my_img" />
+          <div class="black-border"></div>
+        </div>
+      </section>
+
+      <!-- -------------------------Skill Section -------------------------- -->
+
+      <section id="Skill">
+        <div>
+          <img class="skill-logo" src="./images/images.jpg" alt="Skill_logo" />
+          <div class="row">
+            <div class="col-md-4">
+              <div class="skill-list">
+                <div class="skill-group group-1">
+                  <h6>Programming Languages</h6>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>JavaScript
+                  </p>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>Python
+                  </p>
+                </div>
+                <div class="skill-group group-2">
+                  <h6>Frameworks</h6>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>Node JS
+                  </p>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>React JS
+                  </p>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>bootstrap
+                  </p>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>Express JS
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="skill-list">
+                <div class="skill-group group-3">
+                  <h6>Databases</h6>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>Mongo DB
+                  </p>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>MySQL
+                  </p>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>Firebase
+                  </p>
+                </div>
+                <div class="skill-group group-4">
+                  <h6>Tools</h6>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>WordPress
+                  </p>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>Adobe Photoshop
+                  </p>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>MS-DOS
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="skill-list">
+                <div class="skill-group group-5">
+                  <h6>Other Skills</h6>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>HTML
+                  </p>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>CSS
+                  </p>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>Git
+                  </p>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>SEO
+                  </p>
+                </div>
+                <div class="skill-group group-6">
+                  <h6>Languages</h6>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>Hindi
+                  </p>
+                  <p class="skill-list-item">
+                    <i class="fas fa-arrow-circle-right"></i>English
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class=" black-border"></div>
-      </div>
+      </section>
 
-    </section>  
+      <!-- ----------------- :) ------- Project Section ---------------------- :) --------- -->
 
-<!-- -------------------------Skill Section -------------------------- -->
-
-
-<section  id="Skill">
-  <div class="container container-black">
-    <img class="skill-logo" src="./images/images.jpg" alt="Skill_logo">
-<div class="row">
- 
- 
-  <div class="col-md-4">
-      <div class="skill-list">
-       <div class="skill-group group-1">
-        <h6>Programming Languages</h6>
-        <p class="skill-list-item"> <i class="fas fa-arrow-circle-right"></i>JavaScript</p>
-        <p class="skill-list-item"><i class="fas fa-arrow-circle-right"></i>Python</p>
-       </div>
-       <div class="skill-group group-2">
-        <h6>Frameworks</h6>
-        <p class="skill-list-item"> <i class="fas fa-arrow-circle-right"></i>Node JS</p>
-        <p class="skill-list-item"><i class="fas fa-arrow-circle-right"></i>React JS</p>
-        <p class="skill-list-item"><i class="fas fa-arrow-circle-right"></i>bootstrap</p>
-        <p class="skill-list-item"><i class="fas fa-arrow-circle-right"></i>Express JS</p>
-       </div>
-      
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="skill-list">
-      <div class="skill-group group-3">
-       <h6>Databases</h6>
-       <p class="skill-list-item"> <i class="fas fa-arrow-circle-right"></i>Mongo DB</p>
-       <p class="skill-list-item"><i class="fas fa-arrow-circle-right"></i>MySQL</p>
-       <p class="skill-list-item"><i class="fas fa-arrow-circle-right"></i>Firebase</p>
-      </div>
-      <div class="skill-group group-4">
-        <h6>Tools</h6>
-        <p class="skill-list-item"> <i class="fas fa-arrow-circle-right"></i>WordPress</p>
-        <p class="skill-list-item"><i class="fas fa-arrow-circle-right"></i>Adobe Photoshop</p>
-        <p class="skill-list-item"><i class="fas fa-arrow-circle-right"></i>MS-DOS</p>
-       </div>
-  
- </div>
-  </div>
-  <div class="col-md-4">
-    <div class="skill-list">
-      <div class="skill-group group-5">
-        <h6>Other Skills</h6>
-        <p class="skill-list-item"> <i class="fas fa-arrow-circle-right"></i>HTML</p>
-        <p class="skill-list-item"><i class="fas fa-arrow-circle-right"></i>CSS</p>
-        <p class="skill-list-item"><i class="fas fa-arrow-circle-right"></i>Git</p>
-        <p class="skill-list-item"><i class="fas fa-arrow-circle-right"></i>SEO</p>
-       </div>
-       <div class="skill-group group-6">
-         <h6>Languages</h6>
-         <p class="skill-list-item"> <i class="fas fa-arrow-circle-right"></i>Hindi</p>
-         <p class="skill-list-item"><i class="fas fa-arrow-circle-right"></i>English</p>
+      <section id="about">
+        <div>
+          <div class="row pt-5">
+            <div class="col-md-5">
+              <img class="about-spots" src="./images/about-spots.png" alt="" />
+              <img
+                class="gradient-circle"
+                src="./images/gradient-circle.png"
+                alt=""
+              />
+              <img class="about-img" src="./images/about.jpg" alt="about-pic" />
+            </div>
+            <div class="col-md-7">
+              <div class="about-text">ABOUT <span>ME</span></div>
+              <div>
+                <p class="about-body">
+                  Hello! My name is Gyanendra Kumar Knojiya.I am 23 years old. I
+                  did my B.Tech in Electricle and Electronics Engineering from
+                  NIET, Greater Noida in 2018. I am currently living in
+                  Lakhimpur Kheri, Uttar Pradesh, India.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-   </div>
-</div>
-</div>
+      </section>
+    </section>
+    <!-- ----------------------- Contact ------------------------------------- -->
 
-</section>
+    <section id="contact" class="container-fluid">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="about-text">CONTACT <span>ME</span></div>
 
-<!-- ----------------- :) ------- Project Section ---------------------- :) --------- -->
+          <form class="contact-form">
+            <div class="form-group">
+              <input
+                id="contact-name"
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="Enter your name *"
+                required="required"
+                data-error="Name is required."
+              />
+            </div>
+            <div class="form-group">
+              <input
+                id="contact-email"
+                type="text"
+                name="email"
+                class="form-control"
+                placeholder="Enter your email *"
+                required="required"
+                data-error="Email is required."
+              />
+            </div>
+            <div class="form-group">
+              <input
+                id="contact-phone"
+                type="text"
+                name="phone"
+                class="form-control"
+                placeholder="Enter your phone *"
+                required="required"
+                data-error="Phone is required."
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                id="form-message"
+                name="message"
+                class="form-control"
+                placeholder="Leave a message *"
+                rows="4"
+                required="required"
+                data-error="Please,leave us a message."
+              ></textarea>
+            </div>
+            <button  type="submit"> 
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              SUBMIT
+            </button>
+          </form>
 
-<section id='about' >
-  <div class="container container-black">
-    <div class="about-text">ABOUT</div>
-<div class="row">
-  <img class="about-spots" src="./images/about-spots.png" alt="">
-  <img class="gradient-circle" src="./images/gradient-circle.png" alt="">
-<img class="about-img" src="./images/about.jpg" alt="about-pic">
-</div>
-  
-  </div>
 
-</section>
-
+        </div>
+        <div class="col-md-5">
+          <div class="contact-details"></div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
