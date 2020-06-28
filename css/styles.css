@@ -61,6 +61,7 @@ margin-top:100px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  animation: spots 100s infinite linear;
 }
 #Home .bg-img img{
   height: 100%;
@@ -104,6 +105,7 @@ margin-top:100px;
 
 .intro {
   margin: auto 0;
+  overflow: hidden;
 }
 .heading {
   padding-top: 30px;
@@ -187,15 +189,17 @@ margin-top:100px;
   left: 0;
   right: 0;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 30px;
   z-index: 50;
+  animation: spots 10s infinite linear;
 }
 .about-img {
   border-radius: 50%;
   width: 320px;
-  margin: 50px auto;
+  margin: 60px auto;
   position: relative;
   display: flex;
+  z-index: 15;
 }
 .ovr-hide{
   overflow: hidden;
@@ -208,9 +212,8 @@ margin-top:100px;
   z-index: 55;
   width: 450px;
   height: 450px;
-  margin-top: -20px;
+  margin-top: -10px;
   animation: spots 10s infinite linear;
-  overflow: hidden;
 }
 @keyframes spots {
   from {
@@ -408,17 +411,17 @@ animation-delay: 1s;
   }
   .gradient-circle {
     width: 260px;
-    margin-top: -20px;
+    margin-top: 30px;
   }
   .about-img {
     width: 220px;
     
-    margin-top: auto;
+    margin-top: 50px;
   }
   .about-spots {
     width: 320px;
     height: 320px;
-    margin-top: -60px;
+    margin-top: -10px;
   }
   .about-text {
     font-size: 4rem;
@@ -445,16 +448,19 @@ animation-delay: 1s;
     }
   .about-img {
     width: 180px;
-    margin-top: auto;
+    margin-top: 55px;
   }
   .about-spots {
     width: 280px;
     height: 280px;
-    margin-top: -50px;
+    margin-top: 0px;
   }
   .about-text {
     margin-top: 25px;
     font-size: 3rem;
+  }
+  .gradient-circle {
+    margin-top: 35px;
   }
 }
 
