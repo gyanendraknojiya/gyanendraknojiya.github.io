@@ -88,8 +88,8 @@ margin-top:100px;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 10px 30%;
-  
   animation: moveToUp 2s;
+  animation-delay: 2s;
 }
 
 .social-profiles a {
@@ -98,6 +98,7 @@ margin-top:100px;
 
 .resume-btn{
   animation: moveToDown 2s;
+  animation-delay: 2s;
 }
 
 .black-border {
@@ -127,6 +128,7 @@ margin-top:100px;
   color: black;
   text-transform: uppercase;
   animation: moveToLeft 2s;
+  animation-delay: 2s;
 }
 .sub-heading {
   font-family: "Ailerons";
@@ -135,6 +137,7 @@ margin-top:100px;
   padding: 10px 0;
   color: #2e2e2e;
   animation: moveToRight 2s;
+  animation-delay: 2s;
 }
 
 @keyframes moveToLeft{
