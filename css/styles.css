@@ -393,6 +393,21 @@ animation-delay: 1s;
   width: 2px;
   background-color: #000000;
 }
+.social-icons{
+  margin: 20px auto;
+}
+
+.social-icons .fab{
+  color: white;
+  margin: 5px;
+  font-size: 2rem;
+}
+
+.social-icons .fab:hover {
+  transform: scale(1.2);
+  color: #14ffe0;
+}
+
 
 @media screen and (max-width: 768px) {
   .gyanendra-img {
@@ -461,6 +476,13 @@ animation-delay: 1s;
   }
   .gradient-circle {
     margin-top: 35px;
+  }
+  #contact{
+    padding: 0;
+    overflow: hidden;
+  }
+  .social-icons .fab{
+    font-size: 1.5rem;
   }
 }
 
