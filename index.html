@@ -51,7 +51,7 @@
     <section class="container wrapper">
       <!-- --------------------------------------------- Navbar -------------------------------------- -->
 
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="fixed-top navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"
           ><img src="./images/logo.png" alt="logo"
         /></a>
@@ -75,15 +75,15 @@
               <a class="nav-link" href="#Skill">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/projects.html" target="_blank"
-                >Projects</a
+              <a class="nav-link" href="/works.html" target="_blank"
+                >Works</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about-us">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact-us">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -94,7 +94,9 @@
       <section id="Home">
         <div>
           <div class="row">
+          
             <div class="col-md-7 text-center intro">
+              <div class="bg-img"><img src="./images/home.png" alt=""></div>
               <h1 class="heading">GYANENDRA</h1>
               <div class="sub-heading">I am MERN Stack Developer</div>
               <a
@@ -119,7 +121,7 @@
               </div>
             </div>
             <div class="col-md-5">
-              <img src="./images/gyanendra.png" alt="my_img" />
+              <img class="gyanendra-img" src="./images/gyanendra.png" alt="my_img" />
             </div>
           </div>
           <div class="black-border"></div>
@@ -130,7 +132,7 @@
 
       <section id="Skill">
         <div>
-          <img class="skill-logo" src="./images/images.jpg" alt="Skill_logo" />
+          <div class="about-text"><span class="mr-3">MY</span>SKILLS</div>
           <div class="row">
             <div class="col-md-4">
               <div class="skill-list">
@@ -219,13 +221,13 @@
           </div>
         </div>
       </section>
-
+      <div class="black-border"></div>
       <!-- ----------------- :) ------- Project Section ---------------------- :) --------- -->
 
       <section id="about">
         <div>
           <div class="row pt-5">
-            <div class="col-md-5">
+            <div class="col-md-5 ovr-hide">
               <img class="about-spots" src="./images/about-spots.png" alt="" />
               <img
                 class="gradient-circle"
@@ -251,12 +253,12 @@
     </section>
     <!-- ----------------------- Contact ------------------------------------- -->
 
-    <section id="contact" class="container-fluid">
+    <section id="contact" class="container-fluid ">
       <div class="row">
         <div class="col-md-7">
           <div class="about-text">CONTACT <span>ME</span></div>
 
-          <form class="contact-form">
+          <form class="contact-form" action=”mailto:gyanendrak064@gmail.com” method="post" enctype="text/plain">
             <div class="form-group">
               <input
                 id="contact-name"
@@ -301,7 +303,7 @@
                 data-error="Please,leave us a message."
               ></textarea>
             </div>
-            <button  type="submit"> 
+            <button type="submit">
               <span></span>
               <span></span>
               <span></span>
@@ -309,13 +311,22 @@
               SUBMIT
             </button>
           </form>
-
-
         </div>
         <div class="col-md-5">
-          <div class="contact-details"></div>
+          <div class="contact-details">
+            <span class="vertical-line"></span>
+            <div class="contact-heading">CALL ME</div>
+            <div class="contact-text">+91 8802879231</div>
+            <div class="contact-heading">EMAIL ME</div>
+            <div class="contact-text">gyanendrak064@gmail.com</div>
+            <div class="contact-heading">ADDRESS</div>
+            <div class="contact-text">
+              Mamri, District Kheri, UP, India, Pin: 262802
+            </div>
+          </div>
         </div>
       </div>
+      <div class="black-border"></div>
     </section>
   </body>
 </html>
