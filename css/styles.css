@@ -89,7 +89,6 @@ margin-top:100px;
   justify-content: space-between;
   padding: 10px 30%;
   animation: moveToUp 2s;
-  animation-delay: 2s;
 }
 
 .social-profiles a {
@@ -98,7 +97,6 @@ margin-top:100px;
 
 .resume-btn{
   animation: moveToDown 2s;
-  animation-delay: 2s;
 }
 
 .black-border {
@@ -128,7 +126,6 @@ margin-top:100px;
   color: black;
   text-transform: uppercase;
   animation: moveToLeft 2s;
-  animation-delay: 2s;
 }
 .sub-heading {
   font-family: "Ailerons";
@@ -137,28 +134,31 @@ margin-top:100px;
   padding: 10px 0;
   color: #2e2e2e;
   animation: moveToRight 2s;
-  animation-delay: 2s;
 }
 
 @keyframes moveToLeft{
-  0%{ transform: translateX(-50px); opacity: 0;}
-  70%{ transform: translateX(20px);}
+  0%{ opacity: 0;}
+  50%{ transform: translateX(-50px); opacity: 0;}
+  90%{ transform: translateX(20px);}
   100%{ transform: translateX(0); opacity: 1;}
 }
 @keyframes moveToRight{
-  0%{ transform: translateX(50px); opacity: 0;}
-  70%{ transform: translateX(-20px);}
+  0%{ opacity: 0;}
+  50%{ transform: translateX(50px); opacity: 0;}
+  90%{ transform: translateX(-20px);}
   100%{ transform: translateX(0); opacity: 1;}
 }
 @keyframes moveToUp{
-  0%{ transform: translateY(50px); opacity: 0;}
-  70%{ transform: translateY(-20px);}
+  0%{ opacity: 0;}
+  50%{ transform: translateY(50px); opacity: 0;}
+  90%{ transform: translateY(-20px);}
   100%{ transform: translateY(0); opacity: 1;}
 }
 
 @keyframes moveToDown{
-  0%{ transform: translateY(-50px); opacity: 0;}
-  70%{ transform: translateY(20px);}
+  0%{ opacity: 0;}
+  50%{ transform: translateY(-50px); opacity: 0;}
+  90%{ transform: translateY(20px);}
   100%{ transform: translateY(0); opacity: 1;}
 }
 
