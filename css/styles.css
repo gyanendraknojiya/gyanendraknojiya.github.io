@@ -22,7 +22,6 @@ body {
 .navbar {
   /* background: linear-gradient(-90deg, #000000 0%, #cbcbcb 38%, #ffffff 100%); */
   padding: 10px 0;
-  background-color: white;
 }
 
 .navbar-toggler {
@@ -42,6 +41,12 @@ body {
 
 .nav-link {
   padding: 5px 20px !important;
+  color: rgb(43, 43, 43) !important;
+  letter-spacing: 2px !important;
+}
+.nav-link:hover {
+  color: black !important;
+  font-weight: 600;
 }
 
 .navbar-brand img {
