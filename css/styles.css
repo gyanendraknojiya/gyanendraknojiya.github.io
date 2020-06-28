@@ -81,6 +81,12 @@ margin-top:100px;
   display: flex;
   margin-right: 0;
   float: right;
+  animation: img-animation 3s;
+}
+@keyframes img-animation{
+  0%{opacity: 0}
+  50%{opacity: 0}
+  100%{opacity: 1;}
 }
 
 .social-profiles {
