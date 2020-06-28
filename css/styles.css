@@ -88,10 +88,16 @@ margin-top:100px;
   flex-wrap: nowrap;
   justify-content: space-between;
   padding: 10px 30%;
+  
+  animation: moveToUp 2s;
 }
 
 .social-profiles a {
   color: #303030;
+}
+
+.resume-btn{
+  animation: moveToDown 2s;
 }
 
 .black-border {
@@ -120,6 +126,7 @@ margin-top:100px;
   font-size: 5rem;
   color: black;
   text-transform: uppercase;
+  animation: moveToLeft 2s;
 }
 .sub-heading {
   font-family: "Ailerons";
@@ -127,7 +134,31 @@ margin-top:100px;
   font-size: 1.5rem;
   padding: 10px 0;
   color: #2e2e2e;
+  animation: moveToRight 2s;
 }
+
+@keyframes moveToLeft{
+  0%{ transform: translateX(-50px); opacity: 0;}
+  70%{ transform: translateX(20px);}
+  100%{ transform: translateX(0); opacity: 1;}
+}
+@keyframes moveToRight{
+  0%{ transform: translateX(50px); opacity: 0;}
+  70%{ transform: translateX(-20px);}
+  100%{ transform: translateX(0); opacity: 1;}
+}
+@keyframes moveToUp{
+  0%{ transform: translateY(50px); opacity: 0;}
+  70%{ transform: translateY(-20px);}
+  100%{ transform: translateY(0); opacity: 1;}
+}
+
+@keyframes moveToDown{
+  0%{ transform: translateY(-50px); opacity: 0;}
+  70%{ transform: translateY(20px);}
+  100%{ transform: translateY(0); opacity: 1;}
+}
+
 #Skill{
   padding: 30px 0;
 }
