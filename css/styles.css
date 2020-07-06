@@ -337,20 +337,20 @@ body {
 }
 
 #contact {
-  background-color: #303030;
+  background-color: #0f0f0f;
   padding: 50px;
   margin-top: 50px;
 }
 #contact .black-border {
   background: linear-gradient(
     -90deg,
-    #303030 4%,
+    #0f0f0f 4%,
     #ff3c3c 15%,
     #e6ff04 30%,
     #27ff7a 45%,
     #29e2fa 65%,
     #803cff 85%,
-    #303030 96%
+    #0f0f0f 96%
   );
 }
 
@@ -483,12 +483,15 @@ form button span:nth-child(4) {
 }
 .contact-heading {
   color: white;
+  font-family: 'Dosis', sans-serif;
   font-weight: 500;
   font-size: 18px;
   padding: 10px 20px;
 }
 .contact-text {
-  color: white;
+  color: #d4d4d4;
+  letter-spacing: 1px;
+  font-family: 'Dosis', sans-serif;
   font-weight: 500;
   font-size: 13px;
   padding-left: 20px;
