@@ -230,9 +230,9 @@ body {
 
 .skill-group {
   display: block;
-  border-radius: 25px;
   padding: 20px 20px 5px;
   margin: 20px auto;
+  box-shadow: 15px 15px 10px rgb(173, 173, 173) ;
 }
 
 .skill-group h6 {
@@ -519,7 +519,7 @@ form button span:nth-child(4) {
 
 #Work {
   text-align: center;
-  background-color: #111111;
+  background-color: #131313;
   color: white;
 }
 #Work img {
@@ -532,6 +532,7 @@ form button span:nth-child(4) {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
+  
 }
 #Work h1 span {
   color: #ffff31;
@@ -543,6 +544,13 @@ form button span:nth-child(4) {
   align-items: center;
   text-align: center;
   padding: 30px 0;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
 }
 .black-card-box {
   margin: 40px 4%;
@@ -555,24 +563,36 @@ form button span:nth-child(4) {
 
 .black-card-box h2 {
   font-size: 8em;
-  top: 50px;
+  top: 35px;
   right: 10px;
   position: absolute;
   opacity: 0.2;
 }
 .black-card-box:hover h2 {
-  top: 10px;
+  top: 0px;
 }
 .black-card-box h3 {
-  top: 180px;
-  left: 90px;
+  font-family: 'Dosis', sans-serif;
+  top: 175px;
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+  text-transform: uppercase;
   position: absolute;
+  font-weight: 700;
 }
 .black-card-box p {
-  padding-top: 220px;
-  font-size: 0.8em;
+  padding-top: 210px;
+  font-size: 0.9em;
+  color: #dadada;
+  font-family: 'Open Sans', sans-serif;
 }
-.black-card-box a {
+.black-card-box a{
+  text-decoration: none;
+  color: white;
+}
+
+.black-card-box a.button {
   border: 1px solid #03ffff;
   text-decoration: none;
   color: white;
@@ -583,7 +603,7 @@ form button span:nth-child(4) {
   border-radius: 10px;
   display: none;
 }
-.black-card-box:hover a {
+.black-card-box:hover a.button {
   display: block;
 }
 .black-card-box span:nth-child(1) {
